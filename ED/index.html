@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.png">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <section class="start-page" id="start-page">
+        <img src="pictures/logo.png" alt="">
+        <button class="start-button">Start</button>
+    </section>
+
+    <section class="profile" id="profile">
+        <div class="profile-container">
+            <div class="img-container">
+                <img src="pictures/logo.png" alt="" srcset="">
+            </div>
+            <div class="user-info-container">
+                <input type="text" name="" class="user" placeholder="Enter Name" autocapitalize="words" maxlength="10"
+                    required>
+                <h5 class="alert">Please Enter your Name</h5>
+                <input type="submit" value="Submit" class="submit">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="quiz-selection" id="quiz-selection">
+        <h1 class="user-message"></h1>
+        <h2>Please Choose a Quiz:</h2>
+        <div class="quiz-container">
+            <button class="quiz html-quiz">HTML Quiz</button>
+            <button class="quiz css-quiz">CSS Quiz</button>
+            <button class="quiz js-quiz">Javascript Quiz</button>
+            <button class="quiz html-quiz">sample</button>
+        </div>
+    </section>
+
+
+    <section class="quiz-start" id="quiz-start">
+        <button class="backBtn">
+            <img src="pictures/back.png" alt="">
+        </button>
+        <div class="quiz-start-container">
+            <div class="quiz-img-container">
+                <!-- <img src="pictures/html-logo.png" alt="" srcset=""> -->
+            </div>
+            <div class="quiz-info">
+                <h1 class="quiz-info-header">HTML</h1>
+                <p class="quiz-info-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illo doloremque cupiditate
+                    similique ab, temporibus tenetur nulla fuga eaque.</p>
+                <span>
+                    <h5>Difficulty: </h5>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                </span>
+                <div class="play-btn-cont">
+                    <button class="play-btn">
+                        <i class="bi bi-play-fill"></i><span></span>
+                    </button>
+                    <h1 class="play-text">PLAY</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="quiz-ongoing" id="quiz-ongoing">
+        <h1>Test ongoing</h1>
+    </section>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

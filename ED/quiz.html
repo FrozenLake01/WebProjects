@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function customSetInterval(callbacks, intervals) {
+      let index = 0;
+
+      function runCallback() {
+        callbacks[index]();
+        index = (index + 1) % callbacks.length;
+      }
+
+      // Initial call
+      runCallback();
+
+      // Set up setInterval with the given intervals
+      const intervalId = setInterval(runCallback, intervals[index]);
+
+      // Return the intervalId in case you want to clear it later
+      return intervalId;
+    }
+
+    // Example usage:
+    const callbacks = [
+      () => console.log("Callback 1"),
+      () => console.log("Callback 2"),
+      () => console.log("Callback 3"),
+    ];
+
+    const intervals = [1000, 2000, 3000];
+
+    const intervalId = customSetInterval(callbacks, intervals);
+
+    // To stop the interval after a certain time (e.g., 10 seconds), you can use setTimeout:
+    setTimeout(() => {
+      clearInterval(intervalId);
+      console.log("Interval stopped after 10 seconds.");
+    }, 10000);
+
+  </script>
+</body>
+
+</html>
