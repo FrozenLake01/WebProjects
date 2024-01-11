@@ -77,9 +77,11 @@ function quizEffects() {
       console.log(loweredTxt);
       if(loweredTxt == "html"){
         quizHeader.textContent = "HTML";
+        quizOngoing(htmlquestions);
       }
       else if(loweredTxt == "css"){
         quizHeader.textContent = "CSS";
+        quizOngoing(cssquestions);
         
 
       }
