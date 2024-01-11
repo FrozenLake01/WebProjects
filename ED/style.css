@@ -7,11 +7,11 @@
 
 body {
   background: linear-gradient(90deg, #ff66c4, #ffde59);
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 .start-page {
@@ -110,6 +110,7 @@ body {
   height: 50px;
   border-radius: 30px;
   border: 2px solid black;
+  outline: none;
 }
 .user-info-container .alert {
   position: absolute;
@@ -304,7 +305,54 @@ body {
 
 
 .quiz-ongoing {
-  border: 1px solid black;
   width: 100vw;
   height: 100vh ;
+  display: flex;
+  justify-content: center;
+}
+
+
+.quiz-ongoing .container {
+  width: 50vw;
+
+
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  background-color: white;
+  margin: 70px 0 0;
+  height: 80vh;
+}
+.question {
+  border: 1px solid red;
+  margin: 0 0 20px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+}
+
+.controls {
+  display: flex;
+  position: relative;
+  top: -120px;
+  justify-content: center;
+  align-items: center;
 }

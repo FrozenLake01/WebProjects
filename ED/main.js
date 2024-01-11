@@ -95,7 +95,6 @@ function quizEffects() {
   });
 }
 
-// const playTxt = document.querySelector(".play-text");
 const playword = document.querySelector(".play-btn + .play-text");
 
 function playBtnEffect() {
