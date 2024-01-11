@@ -176,11 +176,15 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
+  console.log(correct)
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
+    console.log("correct")
   } else {
     element.classList.add('wrong')
+    console.log("wrong")
+
   }
 }
 
