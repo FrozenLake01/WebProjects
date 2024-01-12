@@ -87,7 +87,13 @@ function quizEffects() {
       }
       else if(loweredTxt == "javascript"){
         quizHeader.textContent = "Javascript";
-        
+        quizOngoing(jsquestions);
+
+      }
+      else if(loweredTxt == "c++"){
+        quizHeader.textContent = "C++";
+
+        quizOngoing(cppquestions);
 
       }
 
